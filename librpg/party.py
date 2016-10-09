@@ -4,7 +4,7 @@ and pools of characters that can be picked to join a group.
 """
 
 from librpg.image import ObjectImage
-from librpg.locals import PARTIES_LOCAL_STATE, CHARACTERS_LOCAL_STATE
+from librpg.locals import PARTIES_LOCAL_STATE, CHARACTERS_LOCAL_STATE, DEFAULT_OBJECT_IMAGE_BASIC_ANIMATION
 
 
 def default_party_factory(reserve):
