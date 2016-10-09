@@ -372,7 +372,7 @@ class Character(object):
     from the CharacterReserve.
     """
 
-    def __init__(self, name, image_file=None, index=0):
+    def __init__(self, name, image_file=None, index=0, basic_animation=DEFAULT_OBJECT_IMAGE_BASIC_ANIMATION):
         """
         *Constructor.*
 
@@ -393,7 +393,7 @@ class Character(object):
         self.name = name
         self.image_file = image_file
         if image_file:
-            self.image = ObjectImage(self.image_file, index)
+            self.image = ObjectImage(self.image_file, index, basic_animation)
         else:
             self.image = None
 
